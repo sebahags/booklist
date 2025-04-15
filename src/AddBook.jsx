@@ -6,9 +6,11 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 
+const initialBookState = { author: '', isbn: '', price: '', title: '', year: '' };
+
 function AddBook(props) {
   const [open, setOpen] = useState(false);
-  const [book, setBook] = useState({author: '', isbn: '', price: '', title: '', year: ''});
+  const [book, setBook] = useState(initialBookState);
 
   const handleOpen = () => {
     setOpen(true);
@@ -16,6 +18,7 @@ function AddBook(props) {
 
   const handleClose = () => {
     setOpen(false);
+    setBook(initialBookState);
   }
 
   const handleSave = () => {
