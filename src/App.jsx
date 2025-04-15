@@ -133,7 +133,7 @@ function App() {
         <AppBar position="static">
             <Box sx={contentWrapperStyle}>
                 <Toolbar disableGutters>
-                    <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+                    <Typography variant="h5" component="div" sx={{ flexGrow: 1, pl: 2 }}>
                         Booklist
                     </Typography>
                 </Toolbar>
